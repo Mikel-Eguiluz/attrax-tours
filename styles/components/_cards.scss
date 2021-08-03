@@ -1,0 +1,78 @@
+@mixin ribbon($color) {
+  &:after {
+    background: $color;
+    content: "";
+    display: block;
+    height: 3.5rem;
+    width: 3rem;
+    position: absolute;
+    top: -1px;
+    right: 3rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 100%,
+      90% 100%,
+      50% 70%,
+      10% 100%,
+      0 100%
+    );
+  }
+}
+
+.card {
+  border-color: $purple;
+  border-style: solid;
+  border-width: 0.3rem;
+  border-radius: 3rem;
+  margin-block-end: 50px;
+
+  &.package-card {
+    position: relative;
+    padding: 3rem;
+    h3:first-child {
+      margin-block-end: 1rem;
+    }
+    .read-more-button {
+      box-sizing: content-box;
+      position: absolute;
+      bottom: -2rem;
+      border-inline: 0.5rem solid $white;
+      left: calc(50% - 9rem - 1rem);
+    }
+    &.gold-ribbon {
+      @include ribbon(#917c34);
+    }
+    &.silver-ribbon {
+      @include ribbon(#d4cfcf);
+    }
+    &.bronze-ribbon {
+      @include ribbon(#b55515);
+    }
+  }
+  &.location-card {
+    padding: 1.5rem;
+    text-align: start;
+
+    img {
+      //Could not resist trying the new aspect ratio property
+      width: 100%;
+      aspect-ratio: 1/1;
+      margin-bottom: 2rem;
+    }
+    p {
+      margin-bottom: 3.5rem;
+    }
+  }
+  &.img-card {
+    //the asset that I could download already had a purple border around them, so I removed the border. I dont like it, because I cannnot control the border size, but I would need an Image without border
+    //overflow: hidden;
+    border: none;
+
+    img {
+      width: 100%;
+      aspect-ratio: 1/1;
+    }
+  }
+}

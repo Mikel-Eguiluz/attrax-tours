@@ -1,0 +1,34 @@
+.page-footer {
+  background-color: $grey;
+  color: $white;
+  padding: 3rem 4rem;
+  @include flex-center(column);
+  align-items: flex-start;
+  img {
+    margin-block-end: 4rem;
+  }
+  .footer-links {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-size: 1.4rem;
+    li {
+      margin-block-end: 1rem;
+    }
+  }
+  .site-nav {
+    font-size: 1.8rem;
+    @include flex-center();
+    order: 1;
+    li {
+      margin-inline-end: 3rem;
+    }
+  }
+  small {
+    width: 100%;
+    text-align: center;
+    order: 2;
+    font-size: 1.4rem;
+  }
+}

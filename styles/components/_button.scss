@@ -1,0 +1,19 @@
+.read-more-button {
+  background-color: $green;
+  display: inline-block;
+  border: none;
+  height: 4rem;
+  width: 18rem;
+  border-radius: 2.5rem;
+  margin: 0;
+  text-decoration: none;
+  background: $green;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.2s;
+  &:hover {
+    background-color: $gold;
+    transform: scale(1.1);
+    font-size: 1.9rem;
+  }
+}

@@ -1,0 +1,35 @@
+.page-header {
+  @include flex-center(column);
+
+  nav {
+    padding: 4rem;
+    padding-block: 1rem;
+    width: 100%;
+    @include flex-center();
+    justify-content: space-between;
+    a img {
+      height: 2.3rem;
+    }
+    .site-menu {
+      position: absolute;
+      width: 50vw;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      background-color: $white;
+      box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+      transform: translateX(-50vw);
+      transition: transform 0.5s, ease-in;
+      li {
+        padding-inline: 1rem;
+        padding-block: 3rem;
+      }
+    }
+    .menu-btn:checked ~ .site-menu {
+      transform: none;
+    }
+  }
+  .header-hero {
+    @include hero("../../assets/images/Hero-image.png", 20rem);
+  }
+}

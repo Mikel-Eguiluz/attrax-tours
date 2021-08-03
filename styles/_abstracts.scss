@@ -1,0 +1,38 @@
+$purple: #7c3491;
+$green: #34917c;
+$grey: #494948;
+$gold: #917c34;
+$white: #ffffff;
+
+@mixin flex-center($direction: row) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+@mixin hero($img-url, $height: 30rem) {
+  height: $height;
+  width: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url($img-url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 15%;
+  background-color: $white;
+
+  .hero-text {
+    height: 100%;
+    color: $white;
+    @include flex-center(column);
+    text-align: center;
+    padding: 3.5rem;
+    justify-content: space-around;
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+main {
+  text-align: center;
+  .our-packages,
+  .other-locations {
+    padding: 4rem;
+  }
+  .hero-banner {
+    @include hero("../../assets/images/Giraffe.png");
+  }
+}
