@@ -42,7 +42,7 @@ a {
   */
 img {
   /* This means that it can be less than 100% of the width of its parent IF the image is INTRINSICALLY smaller */
-  max-width: 100%;
+  // max-width: 100%;
   height: auto;
   /* 'auto' is the initial value for height BUT for images (and other elements which have an intrinic height) that is not the case. To make an image responsive you set one dimension (usually width) to [max-]width: 100%; and the other to 'auto' to ensure it keeps aspect ratio. 'auto' basically tells the browser to decide. */
   vertical-align: middle;

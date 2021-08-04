@@ -1,8 +1,15 @@
+//color variables
 $purple: #7c3491;
 $green: #34917c;
 $grey: #494948;
 $gold: #917c34;
 $white: #ffffff;
+
+//media queries
+$tablet: 800px;
+$desktop: 1200px;
+
+//mixins
 
 @mixin flex-center($direction: row) {
   display: flex;

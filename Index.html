@@ -41,33 +41,37 @@
     <section class="our-packages">
       <h2>Our packages</h2>
 
-      <div class="card package-card gold-ribbon">
-        <h3>Gold Package</h3>
-        <h3>5 Hours</h3>
-        <p>See the best sights in London, from our fully air conditioned Attrax bus, with our tour guide Declan + Lunch
-          & Audience with the Queen!</p>
-        <button class="read-more-button"> Read more </button>
-      </div>
-      <div class="card package-card silver-ribbon">
-        <h3>Silver Package</h3>
-        <h3>3 Hours</h3>
-        <p>See the best sights in London, from our fully air conditioned Attrax bus, with our tour guide Declan + have
-          lunch on us</p>
-        <button class="read-more-button"> Read more </button>
-      </div>
-      <div class="card package-card bronze-ribbon">
-        <h3>Bronze Package</h3>
-        <h3>2 Hours</h3>
-        <p>See the best sights in London, from our fully air conditioned Attrax bus, with our tour guide Declan</p>
-        <button class="read-more-button"> Read more </button>
-      </div>
+      <div class="package-container">
+        <div class="card package-card gold-ribbon">
+          <h3>Gold Package</h3>
+          <h3>5 Hours</h3>
+          <p>See the best sights in London, from our fully air conditioned Attrax bus, with our tour guide Declan +
+            Lunch
+            & Audience with the Queen!</p>
+          <button class="read-more-button"> Read more </button>
+        </div>
+        <div class="card package-card silver-ribbon">
+          <h3>Silver Package</h3>
+          <h3>3 Hours</h3>
+          <p>See the best sights in London, from our fully air conditioned Attrax bus, with our tour guide Declan + have
+            lunch on us</p>
+          <button class="read-more-button"> Read more </button>
+        </div>
+        <div class="card package-card bronze-ribbon">
+          <h3>Bronze Package</h3>
+          <h3>2 Hours</h3>
+          <p>See the best sights in London, from our fully air conditioned Attrax bus, with our tour guide Declan</p>
+          <button class="read-more-button"> Read more </button>
+        </div>
     </section>
     <section class="hero-banner">
+
       <div class="hero-text">
         <h2>Fancy getting out of London?</h2>
         <p>Take one of our day tours to many locations outside of London, including Chester Zoo. It's fun for all the
           family.</p>
         <button class="read-more-button" id="modal-open-btn"> Read more </button>
+      </div>
       </div>
     </section>
     <section class="other-locations">
@@ -77,12 +81,14 @@
           <img src="./assets/images/card-1@x2.png"
             srcset="./assets/images/card-1.png 1x, ./assets/images/card-1@2x.png 2x" alt="Cathedral of York"
             loading="lazy">
-          <h3>City of York</h3>
-          <p>Go see the old Cathedral city. Our guide Mollie will be happy to tell you stories of the old streets
-            on
-            one of our
-            walking tours</p>
-          <button class="read-more-button" id="modal-open-btn"> Read more </button>
+          <div class="location-card-info">
+            <h3>City of York</h3>
+            <p>Go see the old Cathedral city. Our guide Mollie will be happy to tell you stories of the old streets
+              on
+              one of our
+              walking tours</p>
+            <button class="read-more-button" id="modal-open-btn"> Read more </button>
+          </div>
         </div>
         <div class="card img-card">
           <img src="./assets/images/card-2@x2.png"
@@ -100,9 +106,11 @@
           <img src="./assets/images/card-6@x2.png"
             srcset="./assets/images/card-6.png 1x, ./assets/images/card-6@2x.png 2x" alt="Cathedral of York"
             loading="lazy">
-          <h3>Cornwall</h3>
-          <p>Go take a dip in the bliss that is the English sea, and enjoy all Cornwall has to offer</p>
-          <button class="read-more-button" id="modal-open-btn"> Read more </button>
+          <div class="location-card-info">
+            <h3>Cornwall</h3>
+            <p>Go take a dip in the bliss that is the English sea, and enjoy all Cornwall has to offer</p>
+            <button class="read-more-button" id="modal-open-btn"> Read more </button>
+          </div>
         </div>
         <div class="card img-card">
           <img src="./assets/images/card-4@x2.png"
@@ -119,33 +127,39 @@
   </main>
   <footer class="page-footer">
 
-    <a href="#"><img src="./assets/images/bus-white.svg" alt="Attrax tours Logo" loading="lazy"></a>
+    <a class="logo" href="#"><img src="./assets/images/bus-white.svg" alt="Attrax tours Logo" loading="lazy"></a>
 
     <ul class="site-nav">
-      <a href="#">
-        <li>Tours</li>
-      </a>
-      <a href="#">
-        <li>Prices</li>
-      </a>
-      <a href="#">
-        <li>Contact Us</li>
-      </a>
+      <li>
+        <a href="#">Tours</a>
+      </li>
+      <li>
+        <a href="#">Prices</a>
+      </li>
+      <li>
+        <a href="#">Contact Us</a>
+      </li>
     </ul>
     <ul class="footer-links">
-      <a href="#">
-        <li>Privacy policy</li>
-      </a>
-      <a href="#">
-        <li>About us</li>
-      </a>
-      <a href="#">
-        <li>Cookies</li>
-      </a>
+      <li>
+        <a href="#">Privacy policy</a>
+      </li>
+      <li>
+        <a href="#">About us</a>
+      </li>
+      <li>
+        <a href="#">Cookies</a>
+      </li>
     </ul>
     <small>All rights reserved Attrax tours</small>
 
   </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <div class="modal" id="modal">
+    <button class="modal-close-btn" id="close-btn">X</button>
+
+  </div>
 </body>
 
 </html>

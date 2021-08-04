@@ -7,8 +7,16 @@
     width: 100%;
     @include flex-center();
     justify-content: space-between;
+    @media (min-width: $desktop) {
+      .menu-icon {
+        display: none;
+      }
+    }
     a img {
       height: 2.3rem;
+      @media (min-width: $desktop) {
+        height: 3.2rem;
+      }
     }
     .site-menu {
       position: absolute;
@@ -24,6 +32,18 @@
         padding-inline: 1rem;
         padding-block: 3rem;
       }
+      @media (min-width: $tablet) {
+        position: initial;
+        box-shadow: none;
+        transform: none;
+        margin: 0;
+        @include flex-center();
+        justify-content: flex-end;
+        li {
+          padding: 0;
+          margin-inline-end: 3rem;
+        }
+      }
     }
     .menu-btn:checked ~ .site-menu {
       transform: none;
@@ -31,5 +51,14 @@
   }
   .header-hero {
     @include hero("../../assets/images/Hero-image.png", 20rem);
+    @media (min-width: $tablet) {
+      @include hero("../../assets/images/Hero-image@2x.png", 35rem);
+      padding-inline-start: 14.5rem;
+      .hero-text {
+        justify-content: center;
+        align-items: flex-start;
+        text-align: start;
+      }
+    }
   }
 }

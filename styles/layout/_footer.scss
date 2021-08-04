@@ -31,4 +31,19 @@
     order: 2;
     font-size: 1.4rem;
   }
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    .logo {
+      width: 50%;
+    }
+    .site-nav {
+      width: 50%;
+      order: 0;
+      justify-content: flex-end;
+    }
+    .footer-links {
+      width: 100%;
+    }
+  }
 }
