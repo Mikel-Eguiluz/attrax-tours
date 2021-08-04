@@ -387,7 +387,7 @@ button {
 }
 
 .read-more-button {
-  background-color: #34917c;
+  background-color: #246657;
   display: inline-block;
   border: none;
   height: 4rem;
@@ -395,7 +395,7 @@ button {
   border-radius: 2.5rem;
   margin: 0;
   text-decoration: none;
-  background: #34917c;
+  background: #246657;
   cursor: pointer;
   text-align: center;
   -webkit-transition: 0.2s;
