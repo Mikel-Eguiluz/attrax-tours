@@ -29,9 +29,9 @@ main {
     }
   }
   .hero-banner {
-    @include hero("../../assets/images/Giraffe.png");
+    @include hero("https://placeimg.com/1366/302/nature");
     @media (min-width: $tablet) {
-      @include hero("../../assets/images/Giraffe@2x.png");
+      @include hero("https://placeimg.com/2732/604/nature");
       @include flex-center();
       .hero-text {
         padding: 0;
@@ -51,28 +51,19 @@ main {
       }
     }
   }
-  @media (min-width: $desktop) {
-    .other-locations {
-      max-width: 140rem;
-      margin: auto;
-      .location-feature {
-        margin-block-end: 1.6rem;
-        display: flex;
-        column-gap: 1.6rem;
-        &:nth-child(odd) {
-          .img-card {
-            order: -1;
-          }
-        }
+
+  .other-locations {
+    max-width: 140rem;
+    margin: auto;
+    &-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+      @media (min-width: $desktop) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
       }
-      .card {
-        margin: 0;
-        height: 100%;
-        flex: 2 1 300px;
-        &.location-card {
-          flex: 3 2 600px;
-          // min-width: 50rem;
-        }
+      .location-card {
+        grid-column-end: span 2;
       }
     }
   }

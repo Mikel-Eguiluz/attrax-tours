@@ -27,10 +27,12 @@
   border-width: 0.3rem;
   border-radius: 3rem;
   margin-block-end: 50px;
+  margin: 0;
 
   &.package-card {
     position: relative;
     padding: 3rem;
+    margin-block-end: 3rem;
     h3:first-child {
       margin-block-end: 1rem;
     }
@@ -65,11 +67,12 @@
     }
     @media (min-width: $desktop) {
       margin: 0;
-      width: 50%;
+
       @include flex-center();
       column-gap: 1.6rem;
       img {
-        flex: 1 1;
+        border-radius: 3rem;
+
         width: auto;
         margin: 0;
       }
@@ -82,13 +85,12 @@
     }
   }
   &.img-card {
-    //the asset that I could download already had a purple border around them, so I removed the border. I dont like it, because I cannnot control the border size, but I would need an Image without border
-    //overflow: hidden;
-    border: none;
-
+    padding: 1.5rem;
+    margin: 0;
     img {
+      border-radius: 3rem;
       width: 100%;
-      aspect-ratio: 1/1;
+
       @media (min-width: $desktop) {
         width: auto;
       }

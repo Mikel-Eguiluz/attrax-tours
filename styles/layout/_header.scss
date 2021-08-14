@@ -49,10 +49,11 @@
       transform: none;
     }
   }
+
   .header-hero {
-    @include hero("../../assets/images/Hero-image.png", 20rem);
+    @include hero("https://placeimg.com/1366/302/arch", 20rem);
     @media (min-width: $tablet) {
-      @include hero("../../assets/images/Hero-image@2x.png", 35rem);
+      @include hero("https://placeimg.com/1366/302/arch", 35rem);
       padding-inline-start: 14.5rem;
       .hero-text {
         justify-content: center;
